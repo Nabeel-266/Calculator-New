@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="main">
+        <div class="heading">
+            <h1>Simple Calculator</h1>
+        </div>
+
+        <div id="calculator">
+            <div id="display">
+                <input type="text" class="display" placeholder="0" readonly>
+            </div>
+            <div id="buttons">
+
+                <div class="line01 line">
+                    <button class="clr">AC</button>
+                    <button class="dlt">DE</button>
+                    <button class="percent"><i class="fa-solid fa-percent"></i></button>
+                    <button class="divide"><i class="fa-solid fa-divide"></i></button>
+                </div>
+
+                <div class="line02 line">
+                    <button class="seven">7</button>
+                    <button class="eight">8</button>
+                    <button class="nine">9</button>
+                    <button class="multiply"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+
+                <div class="line03 line">
+                    <button class="four">4</button>
+                    <button class="five">5</button>
+                    <button class="six">6</button>
+                    <button class="minus"><i class="fa-solid fa-minus"></i></button>
+                </div>
+
+                <div class="line04 line">
+                    <button class="one">1</button>
+                    <button class="two">2</button>
+                    <button class="three">3</button>
+                    <button class="plus"><i class="fa-solid fa-plus"></i></button>
+                </div>
+                
+                <div class="line05 line">
+                    <button class="dblzero">00</button>
+                    <button class="zero">0</button>
+                    <button class="point">.</button>
+                    <button class="equal"><i class="fa-solid fa-equals"></i></button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>

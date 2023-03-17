@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&family=Varela+Round&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#main{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right, #859398, #283048);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.heading h1{
+    font-size: 3.6rem;
+    font-family: 'Varela Round';
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+    text-decoration: underline rgb(216, 173, 88);
+}
+
+#calculator{
+    width: 360px;
+    height: 450px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 15px 15px 30px 1px #303030;
+}
+#display{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.display{
+    width: 90%;
+    height: 70%;
+    background-color: transparent;
+    outline: none;
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-align: right;
+    border: none;
+    border-top: 4px solid rgb(216, 173, 88);
+    border-bottom: 4px solid rgb(216, 173, 88);
+    color: white;
+    cursor: default;
+}
+.display::placeholder{
+    color: white;
+    font-size: 2.5rem;
+}
+#buttons{
+    width: 100%;
+    height: 75%;
+}
+.line{
+    width: 100%;
+    height: 19%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9%;
+}
+button{
+    width: 14%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    background-color: rgba(40, 48, 72, 0.5);
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 2px 3px 10px 1px #505050;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: 0.2s;
+}
+button:hover{
+    transform: scale(1.1);
+}
+button:active{
+    transform: scale(0.95);
+}
+button i{
+    font-size: 1.5rem;
+}
+
+.clr, .dlt, .percent, .divide, .multiply, .plus, .minus, .equal, .point{
+    color: rgb(216, 173, 88);
+}
+.point{
+    font-size: 2rem;
+}
