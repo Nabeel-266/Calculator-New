@@ -28,8 +28,8 @@
 }
 
 #calculator{
-    width: 360px;
-    height: 450px;
+    width: 350px;
+    height: 460px;
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 8px;
     position: relative;
@@ -44,21 +44,23 @@
 }
 .display{
     width: 90%;
-    height: 70%;
+    height: 75%;
     background-color: transparent;
     outline: none;
-    font-size: 2.5rem;
+    font-size: 2.6rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     text-align: right;
+    border-radius: 5px;
     border: none;
-    border-top: 4px solid rgb(216, 173, 88);
-    border-bottom: 4px solid rgb(216, 173, 88);
     color: white;
     cursor: default;
+    background-color: #444444;
+    padding: 0px 5px;
+    box-shadow: 2px 2px 10px 1px #505050;
 }
 .display::placeholder{
-    color: white;
+    color: rgb(230, 230, 230);
     font-size: 2.5rem;
 }
 #buttons{
